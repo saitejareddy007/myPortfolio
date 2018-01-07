@@ -9,48 +9,115 @@
 </head>
 
 <style type="text/css">
-	body{
-		background: url('img1.jpg');
-		min-height : 800px;
+	#home{
+		background: url('img.jpg');
+		position: none;
+		min-height : 750px;
   		min-width : 100%;
   		background-size:100% 100%;
   		background-repeat:no-repeat;
-  		overflow-y: hidden;
-  		overflow-x: hidden;
+  		
 	}
+	#skill {
+	    height: 100px;
+	    text-align: center;
+	    vertical-align: middle;
+	    margin:4%;
+	    border-radius: 10px;
+	    border:solid black;
+	    background: red;
+	    position: none;
+	    -webkit-animation-name:rotate; 
+		-webkit-animation-timing-function: ease-in-out;
+	    animation: rotate 1s;
+	}
+	#text{
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    width: 50%;
+	    height: 30%;
+	    margin: auto;
+	}
+	@-webkit-keyframes rotate {
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		100% { 
+			-webkit-transform: rotate(360deg);
+		}
+		from {	
+			left: 0px;
+			width:0px;
+			height:0px;
+			border-radius: 0px;
+		}
+		to {	
+			margin:2%;
+			border-radius: 800px;
+			left: 200px;
+			width:100px;
+			height:100px;
+		}
+	}
+
 </style>
 
-<body >
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" >
 
-	<nav class="navbar navbar-inverse">
-  		<div class="container-fluid">
+	
+		<nav style="position: fixed;" class="navbar navbar-default navbar-fixed-top">
+	  		<div  class="container-fluid">
 
-    		<div class="navbar-header">
-      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        		<span class="icon-bar"></span>
-	        		<span class="icon-bar"></span>
-	        		<span class="icon-bar"></span>                        
-      			</button>
-      			
-    		</div>
+	    		<div class="navbar-header">
+	      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>
+		        		<span class="icon-bar"></span>                        
+	      			</button>	
+	    		</div>
 
-    		<div class="collapse navbar-collapse" id="myNavbar">
-		      	<ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Home</a></li>
-			        <li><a href="#">About</a></li>
-			        <li><a href="#">Skills</a></li>
-			        <li><a href="#">Contact</a></li>
-		      	</ul>
-    		</div>
+	    		<div class="collapse navbar-collapse" id="myNavbar">
+			      	<ul class="nav navbar-nav">
+				        <li><a href="#home">Home</a></li>
+				        <li><a href="#Skills">Skills</a></li>
+				        <li><a href="#About">About</a></li>
+				        <li><a href="#Contact">Contact</a></li>
+			      	</ul>
+	    		</div>
+	  		</div>
+		</nav>
+	
 
-  		</div>
-	</nav>
+		<div id="home" class="container" >
+			  	<h1 style="text-align: right; color: white;">Hola....</h1>
+			  	<h1 style="text-align: right; color: white;">I am Saiteja Reddy</h1>
+			  	<h3 style="text-align: right; color: white;">a passionate programmer based in Hyderabad.</h3>  
+		</div>
 
-	<div class="container" >
-	  	<h1 style="text-align: right; color: white;">Hola....</h1>
-	  	<h1 style="text-align: right; color: white;">I am Saiteja Reddy</h1>
-	  	<h3 style="text-align: right; color: white;">a passionate programmer based in Hyderabad.</h3>  
-	</div>
+		<div id="Skills" class="container" >
+			<div class="row">
+				<h1>Languages:</h1>
+				<div id="skill" class="col-sm-1">
+					<div id="text">JAVA</div>
+				</div>
+				<div id="skill" class="col-sm-1">
+					<div id="text">PHP</div>
+				</div>
+				<div id="skill" class="col-sm-1">
+					<div id="text">C</div>
+				</div>
+				<div id="skill" class="col-sm-1">
+					<div id="text">C++</div>
+				</div>
+			</div>
+		</div>
+	
+	
+
+	
 	
 </body>
 </html>
