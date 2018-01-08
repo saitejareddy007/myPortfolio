@@ -1,123 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Home</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The SKILLS</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      
+      color: #777;
+  }
+  font:hover{
+    color: black;
+  }
+  font:focus{
+    color: black;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 5px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 10px;
+  }
+  
+  
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  #home{
+    background: url('img.jpg');
+    position: none;
+    min-height : 750px;
+      min-width : 100%;
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+      
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    background: white !important;
+      color: black !important;
+  }
+  
+  .navbar-nav li.active a {
+      color: black !important;
+      background-color: white !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  
+  #text{
+    -webkit-transform: rotate(315deg);
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+  }
+  #box {
+    background: grey;
+    color: #232b2e;
+    -webkit-transform: rotate(45deg);
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      -webkit-animation-timing-function: ease-in-out;
+      transition: 2s;
+      vertical-align: middle;
+  }
+  
+  #box:hover{
+    background: #27b2b1;
+    border-radius:100px;
+    -webkit-transition-timing-function:ease-in-out;
+    transition: 2s;
+    -webkit-animation-name:rotate; 
+    -webkit-animation-timing-function: ease-in-out;
+    animation: rotate 2s;
+  }
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% { 
+      -webkit-transform: rotate(360deg);
+    }
+  }  
+  </style>
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<style type="text/css">
-	#home{
-		background: url('img.jpg');
-		position: none;
-		min-height : 750px;
-  		min-width : 100%;
-  		background-size:100% 100%;
-  		background-repeat:no-repeat;
-  		
-	}
-	#skill {
-	    height: 100px;
-	    text-align: center;
-	    vertical-align: middle;
-	    margin:4%;
-	    border-radius: 10px;
-	    border:solid black;
-	    background: red;
-	    position: none;
-	    -webkit-animation-name:rotate; 
-		-webkit-animation-timing-function: ease-in-out;
-	    animation: rotate 1s;
-	}
-	#text{
-		position: absolute;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
-	    width: 50%;
-	    height: 30%;
-	    margin: auto;
-	}
-	@-webkit-keyframes rotate {
-		0% {
-			-webkit-transform: rotate(0deg);
-		}
-		100% { 
-			-webkit-transform: rotate(360deg);
-		}
-		from {	
-			left: 0px;
-			width:0px;
-			height:0px;
-			border-radius: 0px;
-		}
-		to {	
-			margin:2%;
-			border-radius: 800px;
-			left: 200px;
-			width:100px;
-			height:100px;
-		}
-	}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div  class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span  class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#myPage">HOME</a></li>
+        <li ><a href="#SKILLS">SKILLS</a></li>
+        <li ><a href="#tour">TOUR</a></li>
+        <li ><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-</style>
+<div id="home" class="container" >
+          <h1 style="text-align: right; color: white;">Hola....,</h1>
+          <h1 style="text-align: right; color: white;">I am Saiteja Reddy,</h1>
+          <h3 style="text-align: right; color: white;">a passionate programmer based in Hyderabad.</h3>  
+    </div>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" >
+<!-- Container (The SKILLS Section) -->
+<div id="SKILLS" class="container text-center">
+  <div class="jumbotron text-center">
+    <h1>Technical Skills</h1>
+  </div>
 
-	
-		<nav style="position: fixed;" class="navbar navbar-default navbar-fixed-top">
-	  		<div  class="container-fluid">
+  <div class="row">
+    <h2>Languages</h2>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">JAVA</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">PHP</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">C</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">C++</h3>
+    </div>
+  </div>
 
-	    		<div class="navbar-header">
-	      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        		<span class="icon-bar"></span>
-		        		<span class="icon-bar"></span>
-		        		<span class="icon-bar"></span>                        
-	      			</button>	
-	    		</div>
+  <div class="row">
+    <h2>Web Development</h2>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">HTML</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">CSS</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">NodeJS</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">JavaScript</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">AJAX</h3>
+    </div>
+    <div id="box" style=" margin: 4%; " class="col-sm-2">
+      <h3 id="text" style="letter-spacing: 0px;">JQuery</h3>
+    </div>
+  </div>
 
-	    		<div class="collapse navbar-collapse" id="myNavbar">
-			      	<ul class="nav navbar-nav">
-				        <li><a href="#home">Home</a></li>
-				        <li><a href="#Skills">Skills</a></li>
-				        <li><a href="#About">About</a></li>
-				        <li><a href="#Contact">Contact</a></li>
-			      	</ul>
-	    		</div>
-	  		</div>
-		</nav>
-	
+</div>
 
-		<div id="home" class="container" >
-			  	<h1 style="text-align: right; color: white;">Hola....</h1>
-			  	<h1 style="text-align: right; color: white;">I am Saiteja Reddy</h1>
-			  	<h3 style="text-align: right; color: white;">a passionate programmer based in Hyderabad.</h3>  
-		</div>
 
-		<div id="Skills" class="container" >
-			<div class="row">
-				<h1>Languages:</h1>
-				<div id="skill" class="col-sm-1">
-					<div id="text">JAVA</div>
-				</div>
-				<div id="skill" class="col-sm-1">
-					<div id="text">PHP</div>
-				</div>
-				<div id="skill" class="col-sm-1">
-					<div id="text">C</div>
-				</div>
-				<div id="skill" class="col-sm-1">
-					<div id="text">C++</div>
-				</div>
-			</div>
-		</div>
-	
-	
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-	
-	
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
 </body>
 </html>
+
