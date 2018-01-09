@@ -15,11 +15,28 @@
       
       color: #777;
   }
-  font:hover{
-    color: black;
+  #box{
+    width:200px;
+    height: 60px;
+    margin: 0.8%;
+    background: #777;
+    border: solid 0.01px #777;
+    border-radius:4px;
+    transition-duration: 400ms;
   }
-  font:focus{
-    color: black;
+  #box:hover{
+    background: #85AD95;
+
+  }
+  #text{
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    margin: auto;
   }
   h3, h4 {
       margin: 10px 0 30px 0;
@@ -34,24 +51,11 @@
   #projects{
   	background: #85AD95;
   }
-  .modal-header, h4, .close {
-      background-color: #333;
-      color: #fff !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-header, .modal-body {
-      padding: 40px 50px;
-  }
+  
   .nav-tabs li a {
       color: #777;
   }
-  #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }  
+  
   .navbar {
       font-family: Montserrat, sans-serif;
       margin-bottom: 0;
@@ -62,20 +66,21 @@
       opacity: 0.9;
   }
   #home{
-    background: url('img.jpg');
-    position: none;
-    min-height : 750px;
+      background: white;
+      position: none;
+      min-height : 750px;
       min-width : 100%;
       background-size:100% 100%;
       background-repeat:no-repeat;
       
   }
-  .navbar li a, .navbar .navbar-brand { 
-      color: #d5d5d5 !important;
+  .navbar-nav li a{
+    color: white !important;
   }
+
   .navbar-nav li a:hover {
     background: white !important;
-      color: black !important;
+    color: black !important;
   }
   
   .navbar-nav li.active a {
@@ -84,49 +89,9 @@
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
+      color: white;
   }
-  
-  #text{
-    -webkit-transform: rotate(315deg);
-    position: absolute;
-    color: white;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 30%;
-    margin: auto;
-  }
-  #box {
-    background: grey;
-    color: #232b2e;
-    -webkit-transform: rotate(45deg);
-      width: 150px;
-      height: 150px;
-      text-align: center;
-      -webkit-animation-timing-function: ease-in-out;
-      transition: 2s;
-      vertical-align: middle;
-  }
-  
-  #box:hover{
-    background: #27b2b1;
-    border-radius:100px;
-    -webkit-transition-timing-function:ease-in-out;
-    transition: 2s;
-    -webkit-animation-name:rotate; 
-    -webkit-animation-timing-function: ease-in-out;
-    animation: rotate 2s;
-  }
-  @-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% { 
-      -webkit-transform: rotate(360deg);
-    }
-  }  
+     
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -153,9 +118,14 @@
 </nav>
 
 <div id="home" class="container" >
-          <h1 style="text-align: right; color: white;">Hola....,</h1>
-          <h1 style="text-align: right; color: white;">I am Saiteja Reddy,</h1>
-          <h3 style="text-align: right; color: white;">a passionate programmer based in Hyderabad.</h3>  
+        <div style="float:left;">
+          <img src="img.jpg" style="width: 350px; height: 350px; border-radius: 400px;">
+        </div>
+        <div style="float:right; height: 350px; padding-top: 7%; padding-bottom: 15%;">
+          <h1>Hola....,</h1>
+          <h1>I am Saiteja Reddy,</h1>
+          <h3>a passionate programmer based in Hyderabad.</h3>
+        </div>  
     </div>
 
 <!-- Container (The SKILLS Section) -->
@@ -166,88 +136,88 @@
 
   <div class="row">
     <h2>Languages</h2>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">JAVA</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">JAVA</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">PHP</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">PHP</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">C</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">C</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">C++</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">C++</h3>
     </div>
   </div>
 
   <div class="row">
 	    <h2>Web Development</h2>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">NodeJS</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">NodeJS</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">HTML</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">HTML</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">CSS</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">CSS</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">Bootstrap</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">Bootstrap</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">JavaScript</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">JavaScript</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">AJAX</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">AJAX</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      <h3 id="text" style="letter-spacing: 0px;">Jade</h3>
+	    <div id="box" class="col-sm-2">
+	      <h3 id="text">Jade</h3>
 	    </div>
-	    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-	      	<h3 id="text" style="letter-spacing: 0px;">JQuery</h3>
+	    <div id="box" class="col-sm-2">
+	      	<h3 id="text">JQuery</h3>
 	    </div>
   </div>
 
   <div class="row">
     <h2>IDE'S</h2>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">IntelliJ</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">IntelliJ</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Android Studio</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text" style="height: 75%;">Android Studio</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Vim Editor</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">Vim Editor</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Visual Studio</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">Visual Studio</h3>
     </div>
   </div>
 
   <div class="row">
     <h2>DBMS</h2>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Oracle SQL</h3>
+    <div id="box" class="col-sm-2">
+        <h3 id="text">MongoDB</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">MYSQL</h3>
+    <div id="box" class="col-sm-2">
+        <h3 id="text">MYSQL</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">MongoDB</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">Oracle SQL</h3>
     </div>
   </div>
   
 
   <div class="row">
     <h2>Operating Systems</h2>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Macintosh ( MacOs )</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">Macintosh</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Linux</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">Linux</h3>
     </div>
-    <div id="box" style=" margin: 5.5%; " class="col-sm-2">
-      	<h3 id="text" style="letter-spacing: 0px;">Windows</h3>
+    <div id="box" class="col-sm-2">
+      	<h3 id="text">Windows</h3>
     </div>
   </div>
 
