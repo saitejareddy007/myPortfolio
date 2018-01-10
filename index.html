@@ -1,98 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme The SKILLS</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      
-      color: #777;
-  }
-  #box{
-    width:200px;
-    height: 60px;
-    margin: 0.8%;
-    background: #777;
-    border: solid 0.01px #777;
-    border-radius:4px;
-    transition-duration: 400ms;
-  }
-  #box:hover{
-    background: #85AD95;
-
-  }
-  #text{
-    position: absolute;
-    color: white;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    margin: auto;
-  }
-  h3, h4 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 5px;      
-      font-size: 20px;
-      color: #111;
-  }
-  .container {
-      padding: 80px 50px 50px 50px;
-  }
-  
-  #projects{
-  	background: #85AD95;
-  }
-  
-  .nav-tabs li a {
-      color: #777;
-  }
-  
-  .navbar {
-      font-family: Montserrat, sans-serif;
-      margin-bottom: 0;
-      background-color: #2d2d30;
-      border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
-      opacity: 0.9;
-  }
-  #home{
-      background: white;
-      position: none;
-      min-height : 750px;
-      min-width : 100%;
-      background-size:100% 100%;
-      background-repeat:no-repeat;
-      
-  }
-  .navbar-nav li a{
-    color: white !important;
-  }
-
-  .navbar-nav li a:hover {
-    background: white !important;
-    color: black !important;
-  }
-  
-  .navbar-nav li.active a {
-      color: black !important;
-      background-color: white !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: white;
-  }
-     
-  </style>
+    <title>Bootstrap Theme The SKILLS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {      
+            color: #777;
+        }
+        .container {
+            padding: 80px 50px 50px 50px;
+        }
+        .nav-tabs li a {
+            color: #777;
+        }
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+        .navbar-nav li a{
+            color: white !important;
+        }
+        .navbar-nav li a:hover {
+            background: white !important;
+            color: black !important;
+        }  
+        .navbar-nav li.active a {
+              color: black !important;
+              background-color: white !important;
+        }
+        .navbar-default .navbar-toggle {
+              border-color: transparent;
+              color: white;
+        }
+        #box{
+            width:200px;
+            height: 60px;
+            margin: 0.8%;
+            background: #777;
+            border: solid 0.01px #777;
+            border-radius:4px;
+            transition-duration: 400ms;
+        }
+        #box:hover{
+            box-shadow: 3px 3px 3px;
+            background: #85AD95;
+        }
+        #home{
+            background: white;
+            position: none;
+            min-height : 750px;
+            min-width : 100%;
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+        }
+        #projects{
+            background: white;
+        }
+        #card{
+            border-radius: 4px;
+            border:solid 0.01px #777;
+            padding-left: 0;
+            padding-right: 0;
+            width:31%;
+            margin-right:1%;
+            margin-top:50px; 
+            margin-left:1%;
+            box-shadow: 3px 3px 4px;
+            background: white; 
+            animation: ranim 400ms;
+            transition: 400ms;
+            animation-timing-function: ease-in-out;
+            background: transparent;
+        }
+        #card:hover{
+            box-shadow: 5px 5px 8px;
+            animation: anim 400ms ;
+            transition: 400ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode:forwards;
+            -webkit-animation-fill-mode:forwards;
+        }
+        @-webkit-keyframes ranim{
+            from{
+                bottom:10px;
+            }
+            to{
+                bottom: 0px;
+            }
+        }
+        @-webkit-keyframes anim{
+            from{
+                bottom:0px;
+            }
+            to{
+                bottom: 10px;
+            }
+        }
+        #cardImg{
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            width: 100%; 
+            height: 200px;
+        }
+        #cardText{
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background: white;
+            height: 100px; 
+            padding: 10px; 
+            border-top: solid 0.1px #777;
+        }
+        #text{
+            position: absolute;
+            color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            margin: auto;
+        }
+        h3, h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 5px;      
+            font-size: 20px;
+            color: #111;
+        } 
+    </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -128,7 +173,6 @@
         </div>  
     </div>
 
-<!-- Container (The SKILLS Section) -->
 <div id="SKILLS" class="container text-center">
   <div class="jumbotron text-center">
     <h1>Technical Skills</h1>
@@ -222,20 +266,90 @@
   </div>
 
 </div>
-<div id="projects" class="container" >
-	<div class="jumbotron text-center">
-    	<h1>PROJECTS</h1>
-  	</div>
-	<div style="border-radius: 5px;" class="col-sm-4">
-		<img style="width: 100%; height: 400; border-radius: 5px;" src="nodejs.jpg">
-      	<h3>Forum Web Application</h3>
+<div id="projects" class="container">
+    <div class="jumbotron text-center">
+        <h1>PROJECTS</h1>
     </div>
-    <div class="col-sm-4">
-      	
+    <a href="#" onclick="return card(1);">
+    	<div id="card" class="col-sm-4">
+    		<img id="cardImg" src="nodejs">
+            <div id="cardText">
+                <h3>Forum Web Application</h3>
+            </div>  	
+        </div>
+    </a>
+    <a href="#" onclick="return card(2);">
+        <div id="card" class="col-sm-4">
+          	<img id="cardImg" src="Bloodbank">
+            <div id="cardText">
+                <h3>Bloodbank</h3>
+            </div>    
+        </div>
+    </a>
+    <a href="#" onclick="return card(3);">
+        <div id="card" class="col-sm-4">
+            <img id="cardImg" src="mms">
+            <div id="cardText">
+                <h3>Medical Management System</h3>
+            </div>    
+        </div>
+    </a>
+    <div id="content1" class="col-sm-1" style="height: 300px; width:100%; display:none;">
+        cont1 hjfjhgjkjkjkhkhkhkhk
     </div>
+    <div id="content2" class="col-sm-1" style="height: 300px; width:100%; display:none;">
+        cont2 hjfjhgjkjkjkhkhkhkhk
+    </div>
+    <div id="content3" class="col-sm-1" style="height: 300px; width:100%; display:none;">
+        hjfjhgjkjkjkhkhkhkhk
+    </div>
+    <a href="#" onclick="return card(4);">
+        <div id="card" class="col-sm-4">
+            <img id="cardImg" src="iot">
+            <div id="cardText">
+                <h3>Home automation using MQTT with android control</h3>
+            </div>    
+        </div>
+    </a>
+    <div id="content4" class="col-sm-1" style="height: 300px; width:100%; display:none;">
+        hjfjhgjkjkjkhkhkhkhk
+    </div>    
 </div>
 
 <script>
+    function card(n) {
+           
+        if(document.getElementById('content'+n).style.display=="none")
+        {
+            document.getElementById('content'+n).style.display="block";
+        }
+        else{
+            document.getElementById('content'+n).style.display="none";
+        }
+        if (n+1>4) {
+            n=1;
+        }
+        else{
+            n=n+1;
+        }
+        document.getElementById('content'+n).style.display="none";
+        if (n+1>4) {
+            n=1;
+        }
+        else{
+            n=n+1;
+        }
+        document.getElementById('content'+n).style.display="none";
+        if (n+1>4) {
+            n=1;
+        }
+        else{
+            n=n+1;
+        }
+        document.getElementById('content'+n).style.display="none";
+
+        return false;
+    }
 $(document).ready(function(){
   $(".navbar a").on('click', function(event) {
     if (this.hash !== "") {
@@ -246,8 +360,7 @@ $(document).ready(function(){
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
+      }, 900, function(){   
         window.location.hash = hash;
       });
     }
