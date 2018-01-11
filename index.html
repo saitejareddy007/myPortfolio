@@ -43,6 +43,123 @@
               border-color: transparent;
               color: white;
         }
+        #content1{
+            width:100%;
+            padding: 20px;
+            height: 300px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px;
+            margin-top: 30px;
+            border: solid 0.1px #777;
+        }
+        #content1:after{
+        	content: "";
+			position: absolute;
+			top: -25px;
+			left: 150px;
+			border-style: solid;
+			border-width: 0 25px 25px;
+			border-color: #FFFFFF transparent;
+			display: block;
+        }
+        #content1:before{
+        	content: "";
+			position: absolute;
+			top:-26px;
+			left: 149px;
+			border-style: solid;
+			border-width: 0 26px 26px;
+			border-color: #777 transparent;
+			display: block;
+        }
+        #content2{
+            width:100%;
+            padding: 20px;
+            height: 300px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px;
+            margin-top: 30px;
+            border: solid 0.1px #777;
+        }
+        #content2:after{
+        	content: "";
+			position: absolute;
+			top: -25px;
+			left: 495px;
+			border-style: solid;
+			border-width: 0 25px 25px;
+			border-color: #FFFFFF transparent;
+			display: block;
+        }
+        #content2:before{
+        	content: "";
+			position: absolute;
+			top:-26px;
+			left: 494px;
+			border-style: solid;
+			border-width: 0 26px 26px;
+			border-color: #777 transparent;
+			display: block;
+        }
+        #content3{
+            width:100%;
+            padding: 20px;
+            height: 300px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px;
+            margin-top: 30px;
+            border: solid 0.1px #777;
+        }
+        #content3:after{
+        	content: "";
+			position: absolute;
+			top: -25px;
+			left: 845px;
+			border-style: solid;
+			border-width: 0 25px 25px;
+			border-color: #FFFFFF transparent;
+			display: block;
+        }
+        #content3:before{
+        	content: "";
+			position: absolute;
+			top:-26px;
+			left: 844px;
+			border-style: solid;
+			border-width: 0 26px 26px;
+			border-color: #777 transparent;
+			display: block;
+        }
+        #content4{
+            width:100%;
+            vertical-align: center;
+            padding: 20px;
+            height: 300px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px;
+            margin-top: 30px;
+            border: solid 0.1px #777;
+        }
+        #content4:after{
+        	content: "";
+			position: absolute;
+			top: -25px;
+			left: 150px;
+			border-style: solid;
+			border-width: 0 25px 25px;
+			border-color: #FFFFFF transparent;
+			display: block;
+        }
+        #content4:before{
+        	content: "";
+			position: absolute;
+			top:-26px;
+			left: 149px;
+			border-style: solid;
+			border-width: 0 26px 26px;
+			border-color: #777 transparent;
+			display: block;
+        }
         #box{
             width:200px;
             height: 60px;
@@ -93,7 +210,7 @@
         }
         @-webkit-keyframes ranim{
             from{
-                bottom:10px;
+                bottom:5px;
             }
             to{
                 bottom: 0px;
@@ -104,7 +221,7 @@
                 bottom:0px;
             }
             to{
-                bottom: 10px;
+                bottom: 5px;
             }
         }
         #cardImg{
@@ -131,7 +248,14 @@
             height: 50%;
             margin: auto;
         }
-        h3, h4 {
+        p{
+        	position: absolute;
+            top:0;
+            bottom: 0;
+            height: 50%;
+            margin: auto;
+        }
+        h3 {
             margin: 10px 0 30px 0;
             letter-spacing: 5px;      
             font-size: 20px;
@@ -270,7 +394,7 @@
     <div class="jumbotron text-center">
         <h1>PROJECTS</h1>
     </div>
-    <a href="#" onclick="return card(1);">
+    <a id="stop" href="#" onclick="return card(1);">
     	<div id="card" class="col-sm-4">
     		<img id="cardImg" src="nodejs">
             <div id="cardText">
@@ -278,32 +402,7 @@
             </div>  	
         </div>
     </a>
-    <a href="#" onclick="return card(2);">
-        <div id="card" class="col-sm-4">
-          	<img id="cardImg" src="Bloodbank">
-            <div id="cardText">
-                <h3>Bloodbank</h3>
-            </div>    
-        </div>
-    </a>
-    <a href="#" onclick="return card(3);">
-        <div id="card" class="col-sm-4">
-            <img id="cardImg" src="mms">
-            <div id="cardText">
-                <h3>Medical Management System</h3>
-            </div>    
-        </div>
-    </a>
-    <div id="content1" class="col-sm-1" style="height: 300px; width:100%; display:none;">
-        cont1 hjfjhgjkjkjkhkhkhkhk
-    </div>
-    <div id="content2" class="col-sm-1" style="height: 300px; width:100%; display:none;">
-        cont2 hjfjhgjkjkjkhkhkhkhk
-    </div>
-    <div id="content3" class="col-sm-1" style="height: 300px; width:100%; display:none;">
-        hjfjhgjkjkjkhkhkhkhk
-    </div>
-    <a href="#" onclick="return card(4);">
+    <a id="stop" href="#" onclick="return card(2);">
         <div id="card" class="col-sm-4">
             <img id="cardImg" src="iot">
             <div id="cardText">
@@ -311,14 +410,56 @@
             </div>    
         </div>
     </a>
-    <div id="content4" class="col-sm-1" style="height: 300px; width:100%; display:none;">
-        hjfjhgjkjkjkhkhkhkhk
+    <a id="stop" href="#" onclick="return card(3);">
+    	<div id="card" class="col-sm-4">
+          	<img id="cardImg" src="Bloodbank">
+            <div id="cardText">
+                <h3>Bloodbank</h3>
+            </div>    
+        </div>
+        
+    </a>
+    <div id="content1" class="col-sm-1" style="display:none;">
+        <p>1.Build a Forum web Application with authentication module and also allows to add posts ,comments to the posts.<br />
+2.Developed a module for login and registration purpose using express-sessions a very popular session module from NPM modules.<br />
+3.It provides an interface to create posts which are directly stored into database (MongoDB) using mongoose.Schema and this post is assiged with the username directly with the help of session variable.<br />
+4.Data(Posts & Comments) is retrieved from database using MongoDB shell commands in NodeJs. <br />5.Front end is developed with jade, CSS, javascript and AJAX call is also used for scrolling task. <br /><br />References : <a href="http://www.saitejareddy.com:3000">http://www.saitejareddy.com:3000</a></p>
+    </div>
+    <div id="content2" class="col-sm-1" style="display:none;">
+    	<div style="float: left; width: 450px;">1.Build a hardware system to control home appliances using a microcontroller (Arduino Wemos D1) which had an inbuilt wifi module (ESP 8266).<br />
+2.you can control your home appliances from anywhere in the world with this project.<br />
+3.The microcontroller is programmed to connect to the local wifi router to use the internet and connect to
+MQTT server by making itself( Microcontroller ) as an MQTT client.<br />
+4.Developed an Android application with sample buttons which can indicate the status of the home
+appliances by its color.<br />
+5.Multiple users can control the Home Appliances with this android application at a time as it is using MQTT server.<br />
+Demo video:</div>
+		<iframe style="float:right; border-radius: 4px;" id="popup-youtube-player" width="459" height="100%" src="https://www.youtube.com/embed/an_EOYu4PG4" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+    </div>
+    <div id="content3" class="col-sm-1" style="display:none;">
+        <p>1.Blood bank web application will offer you to know the contact details of person with the blood-group which you need.<br />
+2.Developed a module for login and registration purpose using PHP as a server-side scripting language.<br /> 3.Front end is developed with HTML, CSS, JavaScript.<br />
+4.Data retrieving is handled by AJAX call.<br /><br />
+References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saitejareddy.com/Bloodbank/</a></p>
+    </div>
+    <a id="stop" href="#" onclick="return card(4);">
+    	<div id="card" class="col-sm-4">
+            <img id="cardImg" src="mms">
+            <div id="cardText">
+                <h3>Medical Management System</h3>
+            </div>    
+        </div>
+        
+    </a>
+    <div id="content4" class="col-sm-1" style="display:none;">
+        <p>1.This web application is for buying medicine in online.<br />
+2.It has a login page for authentication and also you can add medicine to the cart for easy shopping.<br /> 3.Developed a module for cash on delivery where you can add your address for home delivery. Developed a module for admin user to update the stock of the medicine.<br />
+4.Front end is developed with jade, CSS, javascript and AJAX call is used while searching medicine.<br /><br /> References: <a href="http://saitejareddy.com/MedicalManagementSystem/">http://saitejareddy.com/MedicalManagementSystem/</a></p>
     </div>    
 </div>
 
 <script>
     function card(n) {
-           
         if(document.getElementById('content'+n).style.display=="none")
         {
             document.getElementById('content'+n).style.display="block";
@@ -351,20 +492,24 @@
         return false;
     }
 $(document).ready(function(){
-  $(".navbar a").on('click', function(event) {
-    if (this.hash !== "") {
+	$('#stop').on('click', function() {
+    //$('#popup-youtube-player').stopVideo();
+	$('#popup-youtube-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');    
+	});
+	  $(".navbar a").on('click', function(event) {
+	    if (this.hash !== "") {
 
-      event.preventDefault();
+	      event.preventDefault();
 
-      var hash = this.hash;
+	      var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){   
-        window.location.hash = hash;
-      });
-    }
-  });
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 900, function(){   
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
 })
 </script>
 
