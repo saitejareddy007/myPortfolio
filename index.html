@@ -492,10 +492,7 @@ References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saiteja
         return false;
     }
 $(document).ready(function(){
-	$('#stop').on('click', function() {
-    //$('#popup-youtube-player').stopVideo();
-	$('#popup-youtube-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');    
-	});
+	
 	  $(".navbar a").on('click', function(event) {
 	    if (this.hash !== "") {
 
@@ -510,6 +507,9 @@ $(document).ready(function(){
 	      });
 	    }
 	  });
+	  $("#card").on('click', function(event){
+	  	scrollTo("#content1");
+	  })
 })
 </script>
 
