@@ -248,6 +248,46 @@
             height: 50%;
             margin: auto;
         }
+        #cv{
+        	border-radius: 10px; 
+        	width:70px; 
+        	height: 70px; 
+        	padding-left:4px;
+        	padding-right: 4px; 
+        	right:15px;
+        	background: #777; 
+        	position: fixed; 
+        	top:600px;
+        	transition-duration: 2s;
+        	transition-timing-function: ease-in-out;
+        	-ms-transform: rotate(45deg);
+        	-webkit-transform: rotate(45deg);
+        	transform: rotate(45deg);
+        }
+        #cv:hover{
+        	animation:rotate 2s;
+        	background: #85AD95;
+        	border-radius: 50px;
+        	animation-timing-function: ease-in-out;
+        }
+        h5{
+        	position: absolute;
+        	padding: 10%;
+        	-ms-transform: rotate(-45deg);
+        	-webkit-transform: rotate(-45deg);
+        	transform: rotate(-45deg); 
+            color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            margin: auto;
+        }
+        @-webkit-keyframes rotate {
+    		0%   {transform:rotate(0deg);}
+    		100% {transform:rotate(360deg);}
+		}
         p{
         	position: absolute;
             top:0;
@@ -264,6 +304,11 @@
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<a href="http://saitejareddy.com/Cv">
+		<div id="cv" style=" ">
+	<h5 style="color: white;">RESUME</h5>
+</div>
+	</a>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -279,7 +324,6 @@
         <li ><a href="#myPage">HOME</a></li>
         <li ><a href="#SKILLS">SKILLS</a></li>
         <li ><a href="#projects">PROJECTS</a></li>
-        <li ><a href="#resume">RESUME</a></li>
         <li ><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -394,7 +438,7 @@
     <div class="jumbotron text-center">
         <h1>PROJECTS</h1>
     </div>
-    <a id="stop" href="#" onclick="return card(1);">
+    <a id="show1" href="#" onclick="return card(1);">
     	<div id="card" class="col-sm-4">
     		<img id="cardImg" src="nodejs.png">
             <div id="cardText">
@@ -402,7 +446,7 @@
             </div>  	
         </div>
     </a>
-    <a id="stop" href="#" onclick="return card(2);">
+    <a id="show2" href="#" onclick="return card(2);">
         <div id="card" class="col-sm-4">
             <img id="cardImg" src="iot.png">
             <div id="cardText">
@@ -410,7 +454,7 @@
             </div>    
         </div>
     </a>
-    <a id="stop" href="#" onclick="return card(3);">
+    <a id="show3" href="#" onclick="return card(3);">
     	<div id="card" class="col-sm-4">
           	<img id="cardImg" src="Bloodbank.png">
             <div id="cardText">
@@ -442,7 +486,7 @@ Demo video:</div>
 4.Data retrieving is handled by AJAX call.<br /><br />
 References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saitejareddy.com/Bloodbank/</a></p>
     </div>
-    <a id="stop" href="#" onclick="return card(4);">
+    <a id="show4" href="#" onclick="return card(4);">
     	<div id="card" class="col-sm-4">
             <img id="cardImg" src="mms.png">
             <div id="cardText">
@@ -457,7 +501,58 @@ References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saiteja
 4.Front end is developed with jade, CSS, javascript and AJAX call is used while searching medicine.<br /><br /> References: <a href="http://saitejareddy.com/MedicalManagementSystem/">http://saitejareddy.com/MedicalManagementSystem/</a></p>
     </div>    
 </div>
-
+<style type="text/css">
+	input{
+		margin: 2%;
+		margin-bottom: 4%;
+		margin-top: 4%;
+		width:100%;
+		height: 30px;
+		border:none;
+		border-bottom: solid 0.1px;
+		transition: 400ms;
+		transition-timing-function: ease-in-out;
+	}
+	input:focus{
+		border:none;
+		border-bottom: solid 2px green;
+		outline: none;
+	}
+	textarea{
+		margin: 2%;
+		margin-top: 4%; 
+		border:none;
+		border-bottom:  solid 0.1px;
+		min-width: 100%; 
+		transition: 400ms;
+		transition-timing-function: ease-in-out;
+		min-height: 150px;
+	}
+	textarea:focus{
+		border:none;
+		border-bottom: solid 2px green;
+		outline: none;
+		min-width: 100%;
+		min-height: 150px;
+	}
+</style>
+<div id="contact" class="container">
+	<div class="page-header">
+    	<h1>Get in touch with me</h1>     
+  	</div>
+  	<form>
+  		<div style="width:50%; left:0; right: 0; margin: auto;" class="input-group">
+      	<input type="text" name="name" placeholder="Name">
+      	<input type="Email" name="email" placeholder="Email">
+      	<input type="number" name="phoneNo" placeholder="Phone number">
+      	<input type="text" name="subject" placeholder="Subject">
+      	<textarea style="" name="message" placeholder="Message"></textarea>
+      	<input style="border-radius: 4px; color: white; background: #777;" type="submit" name="Send" value="Send">
+    </div>
+  	</form>
+  	
+    
+</div>
 <script>
     function card(n) {
         if(document.getElementById('content'+n).style.display=="none")
@@ -492,7 +587,6 @@ References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saiteja
         return false;
     }
 $(document).ready(function(){
-	
 	  $(".navbar a").on('click', function(event) {
 	    if (this.hash !== "") {
 
@@ -507,9 +601,30 @@ $(document).ready(function(){
 	      });
 	    }
 	  });
-	  $("#card").on('click', function(event){
-	  	scrollTo("#content1");
+	  $("#show1").on('click', function(event){
+	  	event.preventDefault();
+	  	$('html, body').animate({
+	        scrollTop: $('#content1,#show1').offset().top
+	      }, 400);
 	  })
+		$("#show2").on('click', function(event){
+	  	event.preventDefault();
+	  	$('html, body').animate({
+	        scrollTop: $('#content2,#show2').offset().top
+	      }, 400);
+	  })
+	  $("#show3").on('click', function(event){
+	  	event.preventDefault();
+	  	$('html, body').animate({
+	        scrollTop: $('#content3,#show3').offset().top
+	      }, 400);
+	  })
+	  $("#show4").on('click', function(event){
+	  	event.preventDefault();
+	  	$('html, body').animate({
+	        scrollTop: $('#content4,#show4').offset().top
+	      }, 400);
+	  })	  
 })
 </script>
 
