@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About me</title>
+    <title>About me - Saiteja Reddy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,6 +9,48 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '459px',
+          videoId: 'an_EOYu4PG4',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+        return false;
+      }
+    </script>
     <style>
         body {      
             color: #777;
@@ -484,7 +526,7 @@ MQTT server by making itself( Microcontroller ) as an MQTT client.<br />
 appliances by its color.<br />
 5.Multiple users can control the Home Appliances with this android application at a time as it is using MQTT server.<br />
 Demo video:</div>
-		<iframe style="float:right; border-radius: 4px;" id="popup-youtube-player" width="459" height="100%" src="https://www.youtube.com/embed/an_EOYu4PG4" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+		<div id="player" style="float: right;"></div>
     </div>
     <div id="content3" class="col-sm-1" style="display:none;">
         <p>1.Blood bank web application will offer you to know the contact details of person with the blood-group which you need.<br />
@@ -591,7 +633,7 @@ References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saiteja
             n=n+1;
         }
         document.getElementById('content'+n).style.display="none";
-
+        stopVideo();
         return false;
     }
 $(document).ready(function(){
