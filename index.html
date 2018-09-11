@@ -10,876 +10,248 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-=======
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="styleScript.js"></script>
-    
-=======
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '100%',
-          width: '459px',
-          videoId: 'an_EOYu4PG4',
-          events: {
-            //'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-        return false;
-      }
-    </script>
-    <style>
-        body {
-            font-family: 'Alegreya Sans', sans-serif;      
-            color: #777;
-        }
-        .container {
-            padding: 80px 50px 50px 50px;
-        }
-        .nav-tabs li a {
-            color: #777;
-        }
-        .navbar {
-            font-family: Montserrat, sans-serif;
-            margin-bottom: 0;
-            background-color: #2d2d30;
-            border: 0;
-            font-size: 11px !important;
-            letter-spacing: 4px;
-            opacity: 0.9;
-        }
-        .navbar-nav li a{
-            color: white !important;
-        }
-        .navbar-nav li a:hover {
-            background: white !important;
-            color: black !important;
-        }  
-        .navbar-nav li.active a {
-              color: black !important;
-              background-color: white !important;
-        }
-        .navbar-default .navbar-toggle {
-              border-color: transparent;
-              color: white;
-        }
-        #content1{
-            width:100%;
-            padding: 20px;
-            height: 300px;
-            border-radius: 4px;
-            box-shadow: 2px 2px 4px;
-            margin-top: 30px;
-            border: solid 0.1px #777;
-        }
-        #content1:after{
-        	content: "";
-			position: absolute;
-			top: -25px;
-			left: 150px;
-			border-style: solid;
-			border-width: 0 25px 25px;
-			border-color: #FFFFFF transparent;
-			display: block;
-        }
-        #content1:before{
-        	content: "";
-			position: absolute;
-			top:-26px;
-			left: 149px;
-			border-style: solid;
-			border-width: 0 26px 26px;
-			border-color: #777 transparent;
-			display: block;
-        }
-        #content2{
-            width:100%;
-            padding: 20px;
-            height: 300px;
-            border-radius: 4px;
-            box-shadow: 2px 2px 4px;
-            margin-top: 30px;
-            border: solid 0.1px #777;
-        }
-        #content2:after{
-        	content: "";
-			position: absolute;
-			top: -25px;
-			left: 495px;
-			border-style: solid;
-			border-width: 0 25px 25px;
-			border-color: #FFFFFF transparent;
-			display: block;
-        }
-        #content2:before{
-        	content: "";
-			position: absolute;
-			top:-26px;
-			left: 494px;
-			border-style: solid;
-			border-width: 0 26px 26px;
-			border-color: #777 transparent;
-			display: block;
-        }
-        #content3{
-            width:100%;
-            padding: 20px;
-            height: 300px;
-            border-radius: 4px;
-            box-shadow: 2px 2px 4px;
-            margin-top: 30px;
-            border: solid 0.1px #777;
-        }
-        #content3:after{
-        	content: "";
-			position: absolute;
-			top: -25px;
-			left: 845px;
-			border-style: solid;
-			border-width: 0 25px 25px;
-			border-color: #FFFFFF transparent;
-			display: block;
-        }
-        #content3:before{
-        	content: "";
-			position: absolute;
-			top:-26px;
-			left: 844px;
-			border-style: solid;
-			border-width: 0 26px 26px;
-			border-color: #777 transparent;
-			display: block;
-        }
-        #content4{
-            width:100%;
-            vertical-align: center;
-            padding: 20px;
-            height: 300px;
-            border-radius: 4px;
-            box-shadow: 2px 2px 4px;
-            margin-top: 30px;
-            border: solid 0.1px #777;
-        }
-        #content4:after{
-        	content: "";
-			position: absolute;
-			top: -25px;
-			left: 150px;
-			border-style: solid;
-			border-width: 0 25px 25px;
-			border-color: #FFFFFF transparent;
-			display: block;
-        }
-        #content4:before{
-        	content: "";
-			position: absolute;
-			top:-26px;
-			left: 149px;
-			border-style: solid;
-			border-width: 0 26px 26px;
-			border-color: #777 transparent;
-			display: block;
-        }
-        #box{
-            height: 60px;
-            margin: 0.8%;
-            background: #777;
-            border: solid 0.01px #777;
-            border-radius:4px;
-            transition-duration: 400ms;
-        }
-        #box:hover{
-            box-shadow: 3px 3px 3px;
-            background: #85AD95;
-        }
-        #home{
-            background: white;
-            position: none;
-            min-height : 750px;
-            min-width : 100%;
-            background-size:100% 100%;
-            background-repeat:no-repeat;
-        }
-        #projects{
-            background: white;
-        }
-        card{
-            border-radius: 4px;
-            border:solid 0.01px #777;
-            padding-left: 0;
-            padding-right: 0;
-            width:31%;
-            margin-right:1%;
-            margin-top:50px; 
-            margin-left:1%;
-            box-shadow: 0 1px 1px 0 #d2d9e4;
-            background: white; 
-            animation: ranim 100ms;
-            transition: 100ms;
-            min-width: 300px;
-            animation-timing-function: ease-in-out;
-            background: transparent;
-        }
-        #card:hover{
-            box-shadow: 0 2px 10px 0 #d2d9e4;
-            animation: anim 100ms ;
-            transition: box-shadow .25s ease;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode:forwards;
-            -webkit-animation-fill-mode:forwards;
-        }
-        @-webkit-keyframes ranim{
-            from{
-                bottom:2px;
-            }
-            to{
-                bottom: 0px;
-            }
-        }
-        @-webkit-keyframes anim{
-            from{
-                bottom:0px;
-            }
-            to{
-                bottom: 2px;
-            }
-        }
-        #cardImg{
-            border-top-right-radius: 4px;
-            border-top-left-radius: 4px;
-            width: 100%; 
-            height: 200px;
-        }
-        #cardText{
-            border-bottom-right-radius: 4px;
-            border-bottom-left-radius: 4px;
-            background: white;
-            height: 100px; 
-            padding: 10px; 
-            border-top: solid 0.1px #777;
-        }
-        #text{
-            position: absolute;
-            color: white;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50%;
-            margin: auto;
-        }
-        #cv{
-        	border-radius: 10px;
-        	width:70px; 
-        	height: 70px; 
-        	padding-left:4px;
-        	padding-right: 4px; 
-        	right:15px;
-        	background: #85AD95;
-        	position: fixed; 
-        	top:600px;
-        	transition-duration: 2s;
-        	transition-timing-function: ease-in-out;
-        	-ms-transform: rotate(45deg);
-        	-webkit-transform: rotate(45deg);
-        	transform: rotate(45deg);
-        }
-        #cv:hover{
-        	animation:rotate 2s;
-        	background: #777; 
-        	border-radius: 50px;
-        	animation-timing-function: ease-in-out;
-        }
-        h5{
-        	position: absolute;
-        	padding: 10%;
-        	-ms-transform: rotate(-45deg);
-        	-webkit-transform: rotate(-45deg);
-        	transform: rotate(-45deg); 
-            color: white;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50%;
-            margin: auto;
-        }
-        @-webkit-keyframes rotate {
-    		0%   {transform:rotate(0deg);}
-    		100% {transform:rotate(360deg);}
-		}
-        p{
-        	position: absolute;
-            top:0;
-            bottom: 0;
-            height: 50%;
-            margin: auto;
-        }
-        h3 {
-            margin: 10px 0 30px 0;
-            letter-spacing: 5px;      
-            font-size: 20px;
-            color: #111;
-        } 
-    </style>
->>>>>>> parent of dcb3b26... updated
->>>>>>> 532eea4c80b820be96828cae01ebc4c501e25443
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-	<a href="http://saitejareddy.com/Cv">
-		<div id="cv" style=" ">
-	<h5 id="text" style="width:85%;">RESUME</h5>
-</div>
-	</a>
+    <a href="http://saitejareddy.com/Cv">
+        <div id="cv" style=" ">
+            <h5 id="text" style="width:85%;">RESUME</h5>
+        </div>
+    </a>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div  class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span  class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li ><a href="#myPage">HOME</a></li>
-        <li ><a href="#SKILLS">SKILLS</a></li>
-        <li ><a href="#projects">PROJECTS</a></li>
-        <li ><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div  class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span  class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li ><a href="#myPage">HOME</a></li>
+            <li ><a href="#SKILLS">SKILLS</a></li>
+            <li ><a href="#projects">PROJECTS</a></li>
+            <li ><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<div id="home" class="container">
-<<<<<<< HEAD
+    <div id="home" class="container">
         <div style="float:left;">
-        	<img src="images/img.jpg" style="width: 350px; height: 350px; border-radius:400px;">
-=======
-        <div id="imgView" style="">
-        	<img src="images/img.jpg" style="width: 100%; height:100%;" >
-=======
-<div id="home" class="container" >
-        <div style="float:left;">
-          <img src="images/img.jpg" style="width: 350px; height: 350px; border-radius: 400px;">
->>>>>>> parent of dcb3b26... updated
-=======
-<div id="home" class="container" >
-        <div style="float:left;">
-          <img src="images/img.jpg" style="width: 350px; height: 350px; border-radius: 400px;">
->>>>>>> parent of dcb3b26... updated
->>>>>>> 532eea4c80b820be96828cae01ebc4c501e25443
+            <img src="images/img.jpg" style="width: 350px; height: 350px; border-radius:400px;">
         </div>
         <div style="float:right; height: 350px; padding-top: 7%; padding-bottom: 15%;">
-          <h1>Hola....,</h1>
-          <h1>I am Saiteja Reddy,</h1>
-          <h3>a passionate programmer based in Hyderabad.</h3>
+            <h1>Hola....,</h1>
+            <h1>I am Saiteja Reddy,</h1>
+            <h3>a passionate programmer based in Hyderabad.</h3>
         </div>
-        <div style="align-content: horizontal; display: inline-block; margin: 10%;  margin-left:35%;">
-        	<a href="https://github.com/saitejareddy007/" ><img src="images/github.png"></a>
-        	<a href="https://bitbucket.org/Saitejareddy/" ><img style="width: 95px; height: 95px;" src="images/bitbucket.png"></a>
-        	<a href="https://www.linkedin.com/in/saitejareddydevarapalli/" ><a href="" ><img src="images/linkedin.png"></a>
-        	<a href="https://medium.com/@tejareddy.d321" ><img style="border-radius: 5px" src="images/medium.png"></a>
+        <div id="icons">
+            <a href="https://github.com/saitejareddy007/" ><img style="margin-left: 35%;" class="socialMediaIcon" src="images/github.png"></a>
+            <a href="https://bitbucket.org/Saitejareddy/" ><img class="socialMediaIcon" style="width: 95px; height: 95px;" src="images/bitbucket.png"></a>
+            <a href="https://www.linkedin.com/in/saitejareddydevarapalli/" ><img class="socialMediaIcon"  src="images/linkedin.png"></a>
+            <a href="https://medium.com/@tejareddy.d321" ><img class="socialMediaIcon" style="border-radius: 5px" src="images/medium.png"></a>
         </div>
     </div>
 
-<div id="SKILLS" class="container text-center">
-  <div class="jumbotron text-center">
-    <h1>Technical Skills</h1>
-  </div>
+    <div id="SKILLS" class="container text-center">
+        <div class="jumbotron text-center">
+            <h1>Technical Skills</h1>
+        </div>
 
-  <div class="row">
-    <h2>Languages</h2>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">JAVA</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">PHP</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">C</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">C++</h3>
-    </div>
-  </div>
+        <div class="row">
+            <h2>Languages</h2>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">JAVA</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">PHP</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">C</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">C++</h3>
+            </div>
+        </div>
 
-  <div class="row">
-	    <h2>Web Development</h2>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">NodeJS</h3>
-<<<<<<< HEAD
-	    </div>
-<<<<<<< HEAD
-	    <a id="show1" href="#" onclick="return card(1);">
-	    	<div  class="col-sm-4">
-	    		<div id="card" >
-	    			<img id="cardImg" src="images/nodejs.png">
-		            <div id="cardText">
-		                <h3>Forum Web Application</h3>
-		            </div>
-	    		</div>	  	
-	        </div>
-	    </a>
-	    <a id="show2" href="#" onclick="return card(2);">
-	        <div class="col-sm-4">
-	        	<div id="card" >
-	        		<img id="cardImg" src="images/iot.png">
-		            <div id="cardText">
-		                <h3>Home automation using MQTT with android control</h3>
-		            </div>
-	        	</div>  
-	        </div>
-	    </a>
-	    <a id="show3" href="#" onclick="return card(3);">
-	    	<div class="col-sm-4">
-	    		<div id="card" >
-	    			<img id="cardImg" src="images/Bloodbank.png">
-		            <div id="cardText">
-		                <h3>Bloodbank</h3>
-		            </div>
-	    		</div>    
-	        </div>  
-	    </a>
-	    <div id="content1" class="col-sm-1" style="display:none;">
-	        <p>
-	        	1.Build a Forum web Application with authentication module and also allows to add posts ,comments to the posts.<br />
-				2.Developed a module for login and registration purpose using express-sessions a very popular session module from NPM modules.<br />
-				3.It provides an interface to create posts which are directly stored into database (MongoDB) using mongoose.Schema and this post is assiged with the username directly with the help of session variable.<br />
-				4.Data(Posts & Comments) is retrieved from database using MongoDB shell commands in NodeJs. <br />5.Front end is developed with jade, CSS, javascript and AJAX call is also used for scrolling task. <br /><br />References : <a href="http://www.saitejareddy.com:3000">http://www.saitejareddy.com:3000</a>
-			</p>
-	    </div>
-	    <div id="content2" class="col-sm-1" style="display:none;">
-	    	<div style="float: left; width: 450px;">
-	    		1.Build a hardware system to control home appliances using a microcontroller (Arduino Wemos D1) which had an inbuilt wifi module (ESP 8266).<br />
-				2.you can control your home appliances from anywhere in the world with this project.<br />
-				3.The microcontroller is programmed to connect to the local wifi router to use the internet and connect to
-				MQTT server by making itself( Microcontroller ) as an MQTT client.<br />
-				4.Developed an Android application with sample buttons which can indicate the status of the home
-				appliances by its color.<br />
-				5.Multiple users can control the Home Appliances with this android application at a time as it is using MQTT server.<br />
-				Demo video:
-			</div>
-			<div id="player" style="float: right;"></div>
-	    </div>
-	    <div id="content3" class="col-sm-1" style="display:none;">
-	        <p>
-	        	1.Blood bank web application will offer you to know the contact details of 			person with the blood-group which you need.<br />
-				2.Developed a module for login and registration purpose using PHP as a server-side scripting language.<br /> 3.Front end is developed with HTML, CSS, JavaScript.<br />
-				4.Data retrieving is handled by AJAX call.<br /><br />
-				References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saitejareddy.com/Bloodbank/</a>
-			</p>
-	    </div>
-=======
-<<<<<<< HEAD
-        <div class="rom">
-    	    
-    	    	<div  class="col-sm-4">
-                    <a id="show1" href="#" onclick="return card(1);">
-    	    		<div id="card" >
-    	    			<img id="cardImg" src="images/nodejs.png">
-    		            <div id="cardText">
-    		                <h3>Forum Web Application</h3>
-    		            </div>
-    	    		</div>	
-                    </a>  	
-    	        </div>
-    	    
-    	    <a id="show2" href="#" onclick="return card(2);">
-    	        <div class="col-sm-4">
-    	        	<div id="card" >
-    	        		<img id="cardImg" src="images/iot.png">
-    		            <div id="cardText">
-    		                <h3>Home automation using MQTT with android control</h3>
-    		            </div>
-    	        	</div>  
-    	        </div>
-    	    </a>
-    	    <a id="show3" href="#" onclick="return card(3);">
-    	    	<div class="col-sm-4">
-    	    		<div id="card" >
-    	    			<img id="cardImg" src="images/Bloodbank.png">
-    		            <div id="cardText">
-    		                <h3>Bloodbank</h3>
-    		            </div>
-    	    		</div>    
-    	        </div>  
-    	    </a>
-    	    <div id="content1" class="projectDesc" class="col-sm-1" style="display:none;">
-    	        <p>
-    	        	1.Build a Forum web Application with authentication module and also allows to add posts ,comments to the posts.<br />
-    				2.Developed a module for login and registration purpose using express-sessions a very popular session module from NPM modules.<br />
-    				3.It provides an interface to create posts which are directly stored into database (MongoDB) using mongoose.Schema and this post is assiged with the username directly with the help of session variable.<br />
-    				4.Data(Posts & Comments) is retrieved from database using MongoDB shell commands in NodeJs. <br />5.Front end is developed with jade, CSS, javascript and AJAX call is also used for scrolling task. <br /><br />References : <a href="http://www.saitejareddy.com:3000">http://www.saitejareddy.com:3000</a>
-    			</p>
-    	    </div>
-    	    <div id="content2" class="projectDesc" class="col-sm-1" style="display:none;">
-    	    	<div style="float: left; width: 450px;">
-    	    		1.Build a hardware system to control home appliances using a microcontroller (Arduino Wemos D1) which had an inbuilt wifi module (ESP 8266).<br />
-    				2.you can control your home appliances from anywhere in the world with this project.<br />
-    				3.The microcontroller is programmed to connect to the local wifi router to use the internet and connect to
-    				MQTT server by making itself( Microcontroller ) as an MQTT client.<br />
-    				4.Developed an Android application with sample buttons which can indicate the status of the home
-    				appliances by its color.<br />
-    				5.Multiple users can control the Home Appliances with this android application at a time as it is using MQTT server.<br />
-    				Demo video:
-    			</div>
-    			<div id="player" style="float: right;"></div>
-    	    </div>
-    	    <div id="content3" class="projectDesc" class="col-sm-1" style="display:none;">
-    	        <p>
-    	        	1.Blood bank web application will offer you to know the contact details of 			person with the blood-group which you need.<br />
-    				2.Developed a module for login and registration purpose using PHP as a server-side scripting language.<br /> 3.Front end is developed with HTML, CSS, JavaScript.<br />
-    				4.Data retrieving is handled by AJAX call.<br /><br />
-    				References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saitejareddy.com/Bloodbank/</a>
-    			</p>
-    	    </div>
+        <div class="row">
+            <h2>Web Development</h2>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">NodeJS</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">HTML</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">CSS</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Bootstrap</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">JavaScript</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">AJAX</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+              <h3 id="text">Jade</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">JQuery</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>IDE'S</h2>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">IntelliJ</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Android Studio</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Vim Editor</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Visual Studio</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>DBMS</h2>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">MongoDB</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">MYSQL</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Oracle SQL</h3>
+            </div>
+        </div>
+      
+        <div class="row">
+            <h2>Operating Systems</h2>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Macintosh</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Linux</h3>
+            </div>
+            <div id="box" class="col-sm-2">
+                <h3 id="text">Windows</h3>
+            </div>
         </div>
     </div>
+
     <div id="projects" class="container">
->>>>>>> 532eea4c80b820be96828cae01ebc4c501e25443
-	    <a id="show4" href="#" onclick="return card(4);">
-	    	<div class="col-sm-4">
-	    		<div id="card" >
-		            <img id="cardImg" src="images/mms.png">
-		            <div id="cardText">
-		                <h3>Medical Management System</h3>
-		            </div>
-		        </div>    
-	        </div>    
-	    </a>
-	    <div id="content4" class="col-sm-1" style="display:none;">
-	        <p>
-	        	1.This web application is for buying medicine in online.<br />
-				2.It has a login page for authentication and also you can add medicine to the cart for easy shopping.<br /> 3.Developed a module for cash on delivery where you can add your address for home delivery. Developed a module for admin user to update the stock of the medicine.<br />
-				4.Front end is developed with jade, CSS, javascript and AJAX call is used while searching medicine.<br /><br /> References: <a href="http://saitejareddy.com/MedicalManagementSystem/">http://saitejareddy.com/MedicalManagementSystem/</a>
-			</p>
-	    </div>    
-	</div>
-=======
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">HTML</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">CSS</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">Bootstrap</h3>
-	    </div>
-=======
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">HTML</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">CSS</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">Bootstrap</h3>
-	    </div>
->>>>>>> parent of dcb3b26... updated
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">JavaScript</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">AJAX</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      <h3 id="text">Jade</h3>
-	    </div>
-	    <div id="box" class="col-sm-2">
-	      	<h3 id="text">JQuery</h3>
-	    </div>
-  </div>
-<<<<<<< HEAD
->>>>>>> parent of dcb3b26... updated
-=======
->>>>>>> parent of dcb3b26... updated
-
-  <div class="row">
-    <h2>IDE'S</h2>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">IntelliJ</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Android Studio</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Vim Editor</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Visual Studio</h3>
-    </div>
-  </div>
-
-  <div class="row">
-    <h2>DBMS</h2>
-    <div id="box" class="col-sm-2">
-        <h3 id="text">MongoDB</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-        <h3 id="text">MYSQL</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Oracle SQL</h3>
-    </div>
-  </div>
-  
-
-  <div class="row">
-    <h2>Operating Systems</h2>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Macintosh</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Linux</h3>
-    </div>
-    <div id="box" class="col-sm-2">
-      	<h3 id="text">Windows</h3>
-    </div>
-  </div>
-
-</div>
-<div id="projects" class="container">
-    <div class="jumbotron text-center">
-        <h1>PROJECTS</h1>
-    </div>
-    <a id="show1" href="#" onclick="return card(1);">
-    	<div  class="col-sm-4">
-    		<div id="card" >
-    			<img id="cardImg" src="images/nodejs.png">
-	            <div id="cardText">
-	                <h3>Forum Web Application</h3>
-	            </div>
-    		</div>	  	
+        <div class="jumbotron text-center">
+            <h1>PROJECTS</h1>
         </div>
-    </a>
-    <a id="show2" href="#" onclick="return card(2);">
-        <div class="col-sm-4">
-        	<div id="card" >
-        		<img id="cardImg" src="images/iot.png">
-	            <div id="cardText">
-	                <h3>Home automation using MQTT with android control</h3>
-	            </div>
-        	</div>  
+        <a id="show1" href="#" onclick="return card(1);">
+            <div  class="col-sm-4">
+                <div id="card" >
+                    <img id="cardImg" src="images/nodejs.png">
+                    <div id="cardText">
+                        <h3>Forum Web Application</h3>
+                    </div>
+                </div>      
+            </div>
+        </a>
+        <a id="show2" href="#" onclick="return card(2);">
+            <div class="col-sm-4">
+                <div id="card" >
+                    <img id="cardImg" src="images/iot.png">
+                    <div id="cardText">
+                        <h3>Home automation using MQTT with android control</h3>
+                    </div>
+                </div>  
+            </div>
+        </a>
+        <a id="show3" href="#" onclick="return card(3);">
+            <div class="col-sm-4">
+                <div id="card" >
+                    <img id="cardImg" src="images/Bloodbank.png">
+                    <div id="cardText">
+                        <h3>Bloodbank</h3>
+                    </div>
+                </div>    
+            </div>  
+        </a>
+        <div id="content1" class="col-sm-1" style="display:none;">
+            <p>
+                1.Build a Forum web Application with authentication module and also allows to add posts ,comments to the posts.<br />
+                2.Developed a module for login and registration purpose using express-sessions a very popular session module from NPM modules.<br />
+                3.It provides an interface to create posts which are directly stored into database (MongoDB) using mongoose.Schema and this post is assiged with the username directly with the help of session variable.<br />
+                4.Data(Posts & Comments) is retrieved from database using MongoDB shell commands in NodeJs. <br />5.Front end is developed with jade, CSS, javascript and AJAX call is also used for scrolling task. <br /><br />References : <a href="http://www.saitejareddy.com:3000">http://www.saitejareddy.com:3000</a>
+            </p>
         </div>
-    </a>
-    <a id="show3" href="#" onclick="return card(3);">
-    	<div class="col-sm-4">
-    		<div id="card" >
-    			<img id="cardImg" src="images/Bloodbank.png">
-	            <div id="cardText">
-	                <h3>Bloodbank</h3>
-	            </div>
-    		</div>    
+        <div id="content2" class="col-sm-1" style="display:none;">
+            <div style="float: left; width: 450px;">
+                1.Build a hardware system to control home appliances using a microcontroller (Arduino Wemos D1) which had an inbuilt wifi module (ESP 8266).<br />
+                2.you can control your home appliances from anywhere in the world with this project.<br />
+                3.The microcontroller is programmed to connect to the local wifi router to use the internet and connect to
+                MQTT server by making itself( Microcontroller ) as an MQTT client.<br />
+                4.Developed an Android application with sample buttons which can indicate the status of the home
+                appliances by its color.<br />
+                5.Multiple users can control the Home Appliances with this android application at a time as it is using MQTT server.<br />
+                Demo video:
+            </div>
+            <div id="player" style="float: right;"></div>
         </div>
-        
-    </a>
-    <div id="content1" class="col-sm-1" style="display:none;">
-        <p>1.Build a Forum web Application with authentication module and also allows to add posts ,comments to the posts.<br />
-2.Developed a module for login and registration purpose using express-sessions a very popular session module from NPM modules.<br />
-3.It provides an interface to create posts which are directly stored into database (MongoDB) using mongoose.Schema and this post is assiged with the username directly with the help of session variable.<br />
-4.Data(Posts & Comments) is retrieved from database using MongoDB shell commands in NodeJs. <br />5.Front end is developed with jade, CSS, javascript and AJAX call is also used for scrolling task. <br /><br />References : <a href="http://www.saitejareddy.com:3000">http://www.saitejareddy.com:3000</a></p>
-    </div>
-    <div id="content2" class="col-sm-1" style="display:none;">
-    	<div style="float: left; width: 450px;">1.Build a hardware system to control home appliances using a microcontroller (Arduino Wemos D1) which had an inbuilt wifi module (ESP 8266).<br />
-2.you can control your home appliances from anywhere in the world with this project.<br />
-3.The microcontroller is programmed to connect to the local wifi router to use the internet and connect to
-MQTT server by making itself( Microcontroller ) as an MQTT client.<br />
-4.Developed an Android application with sample buttons which can indicate the status of the home
-appliances by its color.<br />
-5.Multiple users can control the Home Appliances with this android application at a time as it is using MQTT server.<br />
-Demo video:</div>
-		<div id="player" style="float: right;"></div>
-    </div>
-    <div id="content3" class="col-sm-1" style="display:none;">
-        <p>1.Blood bank web application will offer you to know the contact details of person with the blood-group which you need.<br />
-2.Developed a module for login and registration purpose using PHP as a server-side scripting language.<br /> 3.Front end is developed with HTML, CSS, JavaScript.<br />
-4.Data retrieving is handled by AJAX call.<br /><br />
-References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saitejareddy.com/Bloodbank/</a></p>
-    </div>
-    <a id="show4" href="#" onclick="return card(4);">
-    	<div class="col-sm-4">
-    		<div id="card" >
-	            <img id="cardImg" src="images/mms.png">
-	            <div id="cardText">
-	                <h3>Medical Management System</h3>
-	            </div>
-	        </div>    
+        <div id="content3" class="col-sm-1" style="display:none;">
+            <p>
+                1.Blood bank web application will offer you to know the contact details of          person with the blood-group which you need.<br />
+                2.Developed a module for login and registration purpose using PHP as a server-side scripting language.<br /> 3.Front end is developed with HTML, CSS, JavaScript.<br />
+                4.Data retrieving is handled by AJAX call.<br /><br />
+                References : <a href="http://www.saitejareddy.com/Bloodbank/">http://www.saitejareddy.com/Bloodbank/</a>
+            </p>
         </div>
-        
-    </a>
-    <div id="content4" class="col-sm-1" style="display:none;">
-        <p>1.This web application is for buying medicine in online.<br />
-2.It has a login page for authentication and also you can add medicine to the cart for easy shopping.<br /> 3.Developed a module for cash on delivery where you can add your address for home delivery. Developed a module for admin user to update the stock of the medicine.<br />
-4.Front end is developed with jade, CSS, javascript and AJAX call is used while searching medicine.<br /><br /> References: <a href="http://saitejareddy.com/MedicalManagementSystem/">http://saitejareddy.com/MedicalManagementSystem/</a></p>
-    </div>    
-</div>
-<style type="text/css">
-	input{
-		margin: 2%;
-		margin-bottom: 4%;
-		margin-top: 4%;
-		width:100%;
-		height: 30px;
-		border:none;
-		border-bottom: solid 0.1px;
-		transition: 400ms;
-		transition-timing-function: ease-in-out;
-	}
-	input:focus{
-		border:none;
-		border-bottom: solid 2px green;
-		outline: none;
-	}
-	textarea{
-		margin: 2%;
-		margin-top: 4%; 
-		border:none;
-		border-bottom:  solid 0.1px;
-		min-width: 100%; 
-		transition: 400ms;
-		transition-timing-function: ease-in-out;
-		min-height: 150px;
-	}
-	textarea:focus{
-		border:none;
-		border-bottom: solid 2px green;
-		outline: none;
-		min-width: 100%;
-		min-height: 150px;
-	}
-</style>
-<div id="contact" class="container">
-	<div class="page-header">
-    	<h1>Get in touch with me</h1>     
-  	</div>
-  	<form>
-  		<div style="width:50%;text-align: center; left:0; right: 0; margin: auto;" class="input-group">
-      	<input type="text" name="name" placeholder="Name">
-      	<input type="Email" name="email" placeholder="Email">
-      	<input type="number" name="phoneNo" placeholder="Phone number">
-      	<input type="text" name="subject" placeholder="Subject">
-      	<textarea style="" name="message" placeholder="Message"></textarea>
-      	<input style="border-radius: 4px; color: white; background: #777;" type="submit" name="Send" value="Send">
-      	<h2>or</h2><br/>
-      	<h4>Drop a mail to <a href="mailto:tejareddy.d321@gmail.com">tejareddy.d321@gmail.com</a>.</h4>.
+        <a id="show4" href="#" onclick="return card(4);">
+            <div class="col-sm-4">
+                <div id="card" >
+                    <img id="cardImg" src="images/mms.png">
+                    <div id="cardText">
+                        <h3>Medical Management System</h3>
+                    </div>
+                </div>    
+            </div>    
+        </a>
+        <div id="content4" class="col-sm-1" style="display:none;">
+            <p>
+                1.This web application is for buying medicine in online.<br />
+                2.It has a login page for authentication and also you can add medicine to the cart for easy shopping.<br /> 3.Developed a module for cash on delivery where you can add your address for home delivery. Developed a module for admin user to update the stock of the medicine.<br />
+                4.Front end is developed with jade, CSS, javascript and AJAX call is used while searching medicine.<br /><br /> References: <a href="http://saitejareddy.com/MedicalManagementSystem/">http://saitejareddy.com/MedicalManagementSystem/</a>
+            </p>
+        </div>    
     </div>
-  	</form>
-  	
-    
-</div>
+
+    <div id="contact" class="container">
+        <div class="page-header">
+            <h1>Get in touch with me</h1>     
+        </div>
+        <form>
+            <div style="width:50%;text-align: center; left:0; right: 0; margin: auto;" class="input-group">
+                <input type="text" name="name" placeholder="Name">
+                <input type="Email" name="email" placeholder="Email">
+                <input type="number" name="phoneNo" placeholder="Phone number">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea style="" name="message" placeholder="Message"></textarea>
+                <input style="border-radius: 4px; color: white; background: #777;" type="submit" name="Send" value="Send">
+                <h2>or</h2><br/>
+                <h4>Drop a mail to <a href="mailto:tejareddy.d321@gmail.com">tejareddy.d321@gmail.com</a>.</h4>
+            </div>
+        </form>
+    </div>
+
 <script>
-    function card(n) {
-        if(document.getElementById('content'+n).style.display=="none")
-        {
-            document.getElementById('content'+n).style.display="block";
-        }
-        else{
-            document.getElementById('content'+n).style.display="none";
-        }
-        if (n+1>4) {
-            n=1;
-        }
-        else{
-            n=n+1;
-        }
-        document.getElementById('content'+n).style.display="none";
-        if (n+1>4) {
-            n=1;
-        }
-        else{
-            n=n+1;
-        }
-        document.getElementById('content'+n).style.display="none";
-        if (n+1>4) {
-            n=1;
-        }
-        else{
-            n=n+1;
-        }
-        document.getElementById('content'+n).style.display="none";
-        stopVideo();
-        return false;
-    }
-$(document).ready(function(){
-	  $(".navbar a").on('click', function(event) {
-	    if (this.hash !== "") {
-
-	      event.preventDefault();
-
-	      var hash = this.hash;
-
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 900, function(){   
-	        window.location.hash = hash;
-	      });
-	    }
-	  });
-	  $("#show1").on('click', function(event){
-	  	event.preventDefault();
-	  	$('html, body').animate({
-	        scrollTop: $('#content1,#show1').offset().top
-	      }, 400);
-	  })
-		$("#show2").on('click', function(event){
-	  	event.preventDefault();
-	  	$('html, body').animate({
-	        scrollTop: $('#content2,#show2').offset().top
-	      }, 400);
-	  })
-	  $("#show3").on('click', function(event){
-	  	event.preventDefault();
-	  	$('html, body').animate({
-	        scrollTop: $('#content3,#show3').offset().top
-	      }, 400);
-	  })
-	  $("#show4").on('click', function(event){
-	  	event.preventDefault();
-	  	$('html, body').animate({
-	        scrollTop: $('#content4,#show4').offset().top
-	      }, 400);
-	  })	  
-})
+    
 </script>
 
 </body>
 </html>
-
