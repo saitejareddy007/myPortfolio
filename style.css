@@ -3,15 +3,35 @@ body {
     color: #777;
 }
 .socialMediaIcon{
+    width:70px;
+    height:70px;
+    margin-left: 20px;
+    margin-right: 20px; 
     box-shadow: 1px 1px 10px black;
     margin-top:10px;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
 .socialMediaIcon:hover{
-    box-shadow: 4px 4px 20px gray;
+    box-shadow: 4px 4px 30px gray;
     margin-top: 0px;
 }
+
+#linkedin_icon{
+    width:70px;
+    height:70px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    box-shadow: 1px 1px 10px #0077B5;
+    margin-top:10px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+#linkedin_icon:hover{
+    box-shadow: 4px 4px 30px #0095e6;
+    margin-top: 0px;
+}
+
 #dp {
     box-shadow: 1px 1px 10px black;
     margin-top:10px;
