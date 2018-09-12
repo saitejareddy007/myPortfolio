@@ -2,13 +2,13 @@ body {
     font-family: 'Alegreya Sans', sans-serif;      
     color: #777;
 }
-img{
+.socialMediaIcon{
     box-shadow: 1px 1px 10px black;
     margin-top:10px;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
-img:hover{
+.socialMediaIcon:hover{
     box-shadow: 4px 4px 20px gray;
     margin-top: 0px;
 }
