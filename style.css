@@ -354,15 +354,11 @@ textarea{
 	margin-top: 4%; 
 	border:none;
 	border-bottom:  solid 0.1px;
-	min-width: 100%; 
-	transition: 400ms;
-	transition-timing-function: ease-in-out;
-	min-height: 150px;
+    transition: 400ms;
+    transition-timing-function: ease-in-out;
 }
 textarea:focus{
 	border:none;
-	border-bottom: solid 2px green;
+    border-bottom: solid 2px green;
 	outline: none;
-	min-width: 100%;
-	min-height: 150px;
 }
